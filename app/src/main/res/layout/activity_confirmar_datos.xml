@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmarDatos"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmar"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="@dimen/titulo"/>
+
+    <LinearLayout
+        android:id="@+id/llNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvTitulo"
+        android:layout_marginTop="@dimen/top"
+        android:paddingLeft="@dimen/espacio"
+        android:paddingRight="@dimen/espacio">
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre"
+            android:textSize="@dimen/datos"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvNombreRecibido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvNombre"
+            android:paddingLeft="@dimen/espacio_respuesta"
+            android:textSize="@dimen/datos"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/llNombre"
+        android:layout_marginTop="@dimen/lineas"
+        android:paddingLeft="@dimen/espacio"
+        android:paddingRight="@dimen/espacio">
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha"
+            android:textSize="@dimen/datos"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvFechaRecibida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/espacio_respuesta"
+            android:textSize="@dimen/datos"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/llFecha"
+        android:layout_marginTop="@dimen/lineas"
+        android:paddingLeft="@dimen/espacio"
+        android:paddingRight="@dimen/espacio">
+
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telefono"
+            android:textSize="@dimen/datos"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvTelefonoRecibido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/espacio_respuesta"
+            android:textSize="@dimen/datos"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/llTelefono"
+        android:layout_marginTop="@dimen/lineas"
+        android:paddingLeft="@dimen/espacio"
+        android:paddingRight="@dimen/espacio">
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="@dimen/datos"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvEmailRecibido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/espacio_respuesta"
+            android:textSize="@dimen/datos"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/llEmail"
+        android:layout_marginTop="@dimen/lineas"
+        android:paddingLeft="@dimen/espacio"
+        android:paddingRight="@dimen/espacio">
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descripcion"
+            android:textSize="@dimen/datos"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvDescripcionRecibida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/espacio_respuesta"
+            android:textSize="@dimen/datos"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top"
+        android:layout_gravity="center"
+        android:text="@string/editar"
+        android:textSize="@dimen/datos"/>
+
+</LinearLayout>

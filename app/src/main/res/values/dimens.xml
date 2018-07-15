@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titulo">30sp</dimen>
+    <dimen name="datos">18sp</dimen>
+    <dimen name="top">20dp</dimen>
+    <dimen name="lineas">10dp</dimen>
+    <dimen name="espacio">16dp</dimen>
+    <dimen name="espacio_respuesta">8dp</dimen>
+</resources>
